@@ -12,11 +12,9 @@ import java.util.List;
 @Controller
 public class IndexController {
     private final MemberService memberService;
-    private final MembersController membersController;
 
-    public IndexController(MemberService memberService, MembersController membersController) {
+    public IndexController(MemberService memberService) {
         this.memberService = memberService;
-        this.membersController = membersController;
     }
 
 
